@@ -1,0 +1,27 @@
+#include<math.h>
+int fact(int);
+void main()
+{
+float n;
+float i;
+float sum=0;
+float j=1;
+    printf("enter number of terms\n");
+    scanf("%f",&n);
+
+   for(i=1;i<=n;i++)
+    {
+     sum=sum+(pow(n,j))/fact(j);
+      j=i+2;
+      printf("%d",)
+    }
+    printf("sum of the given terms is=%f\n",sum);
+getch();
+}
+int fact(int n)
+{
+    if(n == 0)
+        return 1;
+    else
+        return(n*fact(n-1));
+}
